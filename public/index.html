@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Whisper</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="stylesheet" href="style.css" />
+<header class="site-header">
+
+  <img src="/assets/logo.svg" alt="Logo" id="logo">
+  <h1>Whisper</h1>
+</header>
+
+
+</head>
+<body>
+  <div id="status">Waiting for a partner...</div>
+  <div id="chat-box" hidden>
+    <div id="messages"></div>
+    <div id="messages" class="chat-box"></div>
+
+    
+    <div class="input-area">
+  <div class="input-wrapper">
+    <input id="input" type="text" placeholder="Type a message..." autocomplete="off">
+    <button id="send-btn">
+      <img src="/assets/send.svg" alt="Send">
+    </button>
+  </div>
+</div>
+
+  </div>
+
+  <button id="new-chat" hidden>Start New Chat</button>
+ 
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
